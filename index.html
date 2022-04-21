@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<head> 
+    <title>
+        Dorado's
+    </title>
+   <meta charset="ISO-8859-1">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Leckerli+One&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="CSS/stylsheet.css">
+<link rel="icon" href="C:\Users\user\Web Development\favicon.ico">
+</head>
+
+<body style="background-color: black;">
+  <header>
+    <div class="home">
+        <a href="C:\Users\user\Web Development\index.html" style="text-decoration: none; text-shadow: 20px;">
+        <h1 style="color: #E45826; text-shadow: 5px; ">
+    Dorado's
+</h1>    
+        </a>
+
+<p style="margin: 0; color: #F0A500;">
+    <em style="margin: 0;">
+        ....Always Delicious
+    </em>
+</p>
+    </div>
+    <div class="home-2" >
+        <a href="#home" style="text-decoration: none; color:#E45826; 
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;margin-top:18px;"> 
+           HOME 
+        </a>
+        <a href="#home"style="text-decoration: none; color: #E45826;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;margin-top: 18px;">
+            MENU
+        </a>
+        <a href="#home"style="text-decoration: none;color: #E45826;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; margin-top: 18px;">
+            PRICING
+        </a>
+        <a href="#home"style="text-decoration: none;color: #e45826;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;margin-top: 18px;">
+            About Us
+        </a>
+    </div>
+  </header>  
+  
+        <div class="slideshow-container">
+
+            <div class="mySlides fade">
+              <div class="numbertext">1 / 3</div>
+              <img src="C:\Users\user\Web Development\CSS\choc.jpg" style="width: 100%; height: 500px;">
+              <div class="text">welcome to the era of sweets</div>
+            </div>
+            
+            <div class="mySlides fade">
+              <div class="numbertext">2 / 3</div>
+              <img src="C:\Users\user\Web Development\CSS\istockphoto-497959594-612x612.jpg" 
+              style="width:100%;height: 500px;">
+              <div class="text">You're one click away from deliciousness </div>
+            </div>
+            
+            <div class="mySlides fade">
+              <div class="numbertext">3 / 3</div>
+              <img src="C:\Users\user\Web Development\CSS\various-different-types-of-sweet-cakes-in-pastry-shop-glass-display-good-assortment-of-confectionery-2AR0G3B.jpg" 
+              style="width: 100%;height: 500px;">
+              <div class="text">we dey kampe</div>
+            </div>
+            
+            </div>
+            <br>
+            
+            <div style="text-align:center">
+              <span class="dot"></span> 
+              <span class="dot"></span> 
+              <span class="dot"></span> 
+            </div>
+            
+            <script>
+            var slideIndex = 0;
+            showSlides();
+            
+            function showSlides() {
+              var i;
+              var slides = document.getElementsByClassName("mySlides");
+              var dots = document.getElementsByClassName("dot");
+              for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";  
+              }
+              slideIndex++;
+              if (slideIndex > slides.length) {slideIndex = 1}    
+              for (i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace(" active", "");
+              }
+              slides[slideIndex-1].style.display = "block";  
+              dots[slideIndex-1].className += " active";
+              setTimeout(showSlides, 10000); // Change image every 10 seconds
+            }
+            </script>
+
+<div class="greetings" style="text-align: center;">
+  <img src="C:\Users\user\Web Development\CSS\facebook-profile-photo-hd-images.jpg" alt="dp" class="dip">
+  <h1>
+    Hi, <br>
+    What would you like to have today ?
+</h1>
+<p>
+  we serve the best creamy and chocolatey goodness you've ever tasted,<br>
+  you are just a click away from testifing to this cocoa miracle. <br>
+  <em>Caution:</em> customers are 99% likely to get addicted
+</p>
+</div>
+<footer>
+  <div class="footer">
+    <div class="form">
+      <form action="mailto:samuelolamide132@gmail.com" method="post" enctype="text/plain">
+  
+   <div class="sub" style="text-decoration: none; color: burlywood;">
+     <h1>
+      Get an update on the latest cuisine <br> 
+      Subscribe to our newsletter</h1> <br>
+     <label for="email">Email:
+    <input type="email" name="email" id="email"></label> 
+  <input type="submit" name="submit" class="btn">
+   </div>
+ </form>
+    </div>
+<hr>
+<div class="footer" style="text-decoration: none; color: #f2f2f2;">
+  (C) Copyright. 2022, Dorado's. <br> All rights reserved
+  <p>
+    <a href="#home" style="text-decoration: none; color: #f2f2f2;">Home |</a><a href="#contact" style="text-decoration: none; color: #f2f2f2;"> Contact Us </a> 
+  </p>
+</div>
+  </div>
+</footer>
+</body>
